@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="text-center">
+		<h1>SuccessFully!!!!!!</h1>
+		<h3 th:text="${desc}"></h3>
+		<h1 th:text="${Header}"></h1>
+
+		<br>
+
+	</div>
+
+	<hr>
+
+	<!-- This way is for inputForm method inside the FormController-->
+	<h1 th:text="${email}">Email</h1>
+	<h1 th:text="${name}">Name</h1>
+	<h1 th:text="${password}">password</h1>
+
+	<!-- This way is for inputFormByUsingModelAttribute method and inputFormByUsingModelAttributeWithClassObject inside the FormController-->
+
+	<h1 th:text="${user.email}">Email</h1>
+	<h1 th:text="${user.name}">Name</h1>
+	<h1 th:text="${user.password}">password</h1>
+
+</body>
+
+</html>
